@@ -2,7 +2,6 @@
   "name": "react-social",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://community.pezentics.com",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -46,6 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:8800/api"
+  }
 }
