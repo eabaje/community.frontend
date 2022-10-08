@@ -6,6 +6,7 @@ import { signout } from "../context/actions/auth/auth.action";
 import ContentLink from "../components/content/contentBar/Link";
 import Rightbar from "../components/rightbar/Rightbar";
 import Sidebar from "../components/sidebar/Sidebar";
+import Footer from "../components/footer/footer";
 const MainLayout = ({ children }) => {
   // const {
   //   authDispatch,
@@ -42,6 +43,18 @@ const MainLayout = ({ children }) => {
 
   return (
     <>
+      {/* <!-- Start Preloader Area --> */}
+      <div class="preloader-area">
+        <div class="spinner">
+          <div class="inner">
+            <div class="disc"></div>
+            <div class="disc"></div>
+            <div class="disc"></div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- End Preloader Area --> */}
+
       <div class="main-content-wrapper d-flex flex-column">
         <Header />
 
@@ -57,6 +70,8 @@ const MainLayout = ({ children }) => {
         </div>
         <Rightbar />
       </div>
+
+      <Footer />
     </>
   );
 };
